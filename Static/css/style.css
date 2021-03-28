@@ -25,29 +25,20 @@ the color of the text in the navbar brand */
     color: white;
 }
 
-.drought_img{
+/* Format drought image */
+.img-fluid{
     height: 300px;
     width: 600px;
     margin-bottom: 0px;
     margin-top: 0px;
     vertical-align:text-top;
     margin-right: 10px;
+    /* margin-left: 10px; */
 }
 
 .navbar-dark .navbar-nav .nav-link{
     color: white;
 }
-
-/* .dropdown-item{
-    margin-right: 50px;
-} */
-
-/* hover grey over dropdown */
-/* .navbar .dropdown:hover {
-    background-color: lightgray;
-} */
-
-/*  ---------------------------------------------------------------------------------------------------------- */
 
 /* GENERAL SITE DETAILS FOR ALL PAGES */
 /* add site background */
@@ -61,17 +52,13 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-weight: bold;
     /* padding:auto; */
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 h2{
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-.container-fluid{
     margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 /* change the font and size of the description-- used for data and comparison pages */
@@ -80,7 +67,22 @@ h2{
     font-size: 12px;
     font-weight: normal;
     padding-bottom: 10px;
+    text-align: left;
 }
+
+/* Add a margin to the container */
+.container-fluid{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row{
+    margin-bottom: 10px;
+}
+
 /*  ---------------------------------------------------------------------------------------------------------- */
 
 /* INDEX PAGE */
@@ -98,99 +100,6 @@ h2{
 }
 
 
-.vis-box {
-    position: relative;
-    margin-top: 60px; 
-    margin-bottom: 62px; 
-    padding: 25px 15px 40px; 
-    padding-right: 50px;
-    color:black;
-    background-color: white; 
-}
-
-/* Box around image when you hover over it */
-.container .option:hover {
-    border:0.1px solid black;
-}
-
-
-/* Text under visualizations graphs */
-.overlay {
-    color: black;
-    text-align: right;
-    font-size: 10px;
-    padding: 1px 20px 10px;
-}
-
-/* Change font size, color above smaller visualizations */
-.img-title {
-    color: #0BADA6;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: normal;
-    padding-top: 10px;
-    padding:auto;
-    margin: auto;
-    font-size: 10px;
-    text-align: center;
-}
-
-/*  ---------------------------------------------------------------------------------------------------------- */
-
-/* COMPARISON PAGE */
-
-/* alter box on comparisons */
-.comp-box{
-    position: relative;
-    margin-top: 60px; 
-    margin-bottom: 62px; 
-    padding: 25px 15px 40px; 
-    padding-right: 50px;
-    color:black;
-    background-color: white; 
-}
-
-/* alter comp details-- details are the description above each image */
-.detail {
-    color: #0BADA6;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* change detail hover to remove underline when hovered over */
-a:hover {
-    text-decoration: none;
-}
-
-/* add padding to images-- class is imgage */
-.imgage{
-    padding: initial;
-    padding-top: 0px;
-    padding-bottom: 20px;
-}
-
-/*  ---------------------------------------------------------------------------------------------------------- */
-/* DATA PAGE */
-.table {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 25px;
-    padding-bottom: 0px;
-    background-color: white;
-}
-.container .table{
-    margin-top: 60px;
-}
-
-/* .data-box {
-    position: relative;
-    margin-top: 60px; 
-    margin-bottom: 62px; 
-    padding: 25px 15px 40px; 
-    padding-right: 50px;
-    color:black;
-    background-color: white; 
-} */
 
 
 /*  ---------------------------------------------------------------------------------------------------------- */
@@ -206,4 +115,15 @@ background-color: #0BADA6 !important;}} */
 @media(max-width: 992px){
 .container .option:hover {
     border:none;
+}}
+
+@media(min-width: 1600px){
+    .img-fluid{
+        height: 500px;
+        width: 1100px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        vertical-align:text-top;
+        margin-right: 10px;
+        /* margin-left: 10px; */
 }}
