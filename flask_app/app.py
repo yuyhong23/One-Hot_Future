@@ -13,7 +13,7 @@ from flask import Flask, render_template
 # pswd = 'postgres'
 
 engine = create_engine('postgresql://postgres:' +
-                       pswd + '@localhost:5432/_db')
+                       pswd + '@localhost:5432/one_hot_future_db')
 connection = engine.connect()
 
 # Flask Setup
@@ -40,13 +40,13 @@ def charts():
 def emissions_data():
 
     # Establish connection with the database
-    engine = create_engine('postgresql://postgres:' + pswd + '@localhost:5432/_db')
+    engine = create_engine('postgresql://postgres:' + pswd + '@localhost:5432/one_hot_future_db')
     connection = engine.connect()
 
-    original_results = pd.read_sql(
-        'SELECT * FROM _table limit 10', connection)
+    results = pd.read_sql(
+        'SELECT * FROM energy_breakdown_emissions', connection)
 
-    return jsonify((original_results).to_dict("record"))
+    return jsonify((results).to_dict("record"))
 
 
 
