@@ -27,9 +27,18 @@ def home():
     return render_template("index.html")
 
 
-@app.route('/charts')
+@app.route('/other_predictions')
 def charts():
-    return render_template('charts.html')
+    return render_template('other_predictions.html')
+
+@app.route('/temperatures')
+def temperatures():
+    return render_template('temperatures.html')
+
+@app.route('/the_team')
+def the_team():
+    return render_template('the_team.html')
+
 
 
 
