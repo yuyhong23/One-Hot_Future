@@ -15,7 +15,8 @@
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #121212;">
         <img src="/Static/images/final_logo_80w.png" class="logo">
         <a href="index.html" class="navbar-brand">One-Hot Future</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,8 +30,18 @@
                 <!-- <a href="humidity.html" class="dropdown-item">Humidity</a>
                                 <a href="cloudiness.html" class="dropdown-item">Cloudiness</a>
                                 <a href="wind-speed.html" class="dropdown-item">Wind Speed</a> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Predictions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="other_predictions.html">Emissions Predictions</a>
+                        <a class="dropdown-item" href="temperatures.html">Temperature Predictions</a>
+                    </div>
+                <!-- <li class="nav-item active">
+                    <a href="other_predictions.html" class="nav-link"> Emissions Predictions</a>
                 <li class="nav-item active">
-                    <a href="other_predictions.html" class="nav-link">Predictions</a>
+                    <a href="other_predictions.html" class="nav-link"> Temperature Predictions</a> -->
                 <li class="nav-item">
                     <a href="the_team.html" class="nav-link">Meet the Team</a>
                     <!-- <li class = "nav-item">
@@ -40,66 +51,43 @@
             </ul>
         </div>
     </nav>
-
-    <!-- this needs to be named container for bootstrap to know what to do -->
-    <!-- add rows and columns. You can add as many rows as you need -->
-    <h2 style="text-align: center;" class="title">Background</h2>
+    <h2 style="text-align: center;" class="title">Temperature Predictions</h2>
     <div class="container-fluid">
         <div class="row">
-            <!-- <div class="col-lg-6 col-md-6"> -->
-            <!-- Add box on left side -->
-            <div class="intro">
-                <img src="/Static/images/drought-climate-change.jpg" class="drought_img" style="float: left;">
-                <span class="introduction">Climate crisis is one of the top problems our world is facing currently. To tackle this crisis,
-                    countries around the globe have been trying to lower their emission rates. <br>
-                    As a team, we are interested in using machine learning to help predict the future emissions from
-                    countries based on how they generate energy in the past years. <br>
-                    We want to discover whether or not the current efforts the countries put in are enough to meet their
-                    emission goal in 2030 based on the Paris 2015 Country Climate Pledges.<br>
-                    We are also interested in exploring countries’ yearly temperature change and to discover when the
-                    emission goals are and/or aren’t predicted to be met, what will be the prediction for our future
-                    temperature.
-                </span>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-12">
-            <!-- Right Box -->
-            <div class="vis-box">
-                <h5 class="title">Add data here</h5>
-                <!-- <hr> -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <p>Some data</p>
-                            <!-- <a href="max-temp.html">
-                                        <div class="img-title">Temp Max</div>
-                                        <img class="option" src="Visualizations/Latitude_vs_Temp_Max.png" width="125%" alt="temp">
-                                    </a> -->
-                        </div>
-                        <div class="col-6">
-                            <p>Some data</p>
-                            <!-- <a href="humidity.html">
-                                        <div class="img-title">Humidity</div>
-                                        <img class="option" src="Visualizations/Latitude_vs_Hum.png" width="125%" alt="humidity">
-                                    </a> -->
-                        </div>
-                        <div class="col-6">
-                            <p>Some data</p>
-                            <!-- <a href="cloudiness.html">
-                                        <div class="img-title">Cloudiness</div>
-                                        <img class="option" src="Visualizations/Latitude_vs_Cloud.png" width="125%" alt="cloudiness">
-                                    </a>
-                                </div> -->
-                            <div class="col-6">
-                                <p>Some data</p>
-                                <!-- <a href="wind-speed.html">
-                                        <div class="img-title">Wind Speed</div>
-                                        <img class="option" src="Visualizations/Latitude_vs_Wind_Speed.png" width="125%" alt="wind"> 
-                                    </a>-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <!-- Yuying dashboard for single graph -->
+                <div class='tableauPlaceholder' id='viz1617078418478' style='position: relative'><noscript><a href='#'><img
+                                alt='Dashboard 1 '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;re&#47;region_temp&#47;Dashboard1&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='region_temp&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;re&#47;region_temp&#47;Dashboard1&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en' />
+                        <param name='filter' value='publish=yes' />
+                    </object></div>
+                <script
+                    type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1617078418478'); 
+                    var vizElement = divElement.getElementsByTagName('object')[0]; 
+                    if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; 
+                    vizElement.style.height = '827px'; } 
+                    else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; 
+                    vizElement.style.height = '827px'; } 
+                    else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } 
+                    var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
             </div>
         </div>
     </div>
