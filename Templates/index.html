@@ -55,7 +55,7 @@
     </nav>
     <div class="container-fluid">
         <div class="row">
-            <h2 style="text-align: center;" class="title">Background</h2>
+            <h2 style="text-align: center;" class="title">Climate Change is Real.</h2>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <img src="../static/images/drought-climate-change.jpg" class="img-fluid">
                 <!-- this needs to be named container for bootstrap to know what to do -->
@@ -65,29 +65,35 @@
                     <div class="row"> -->
                 <!-- <div class="col-lg-6 col-md-3"> -->
                 <!-- Add box on left side -->
-                <p>Climate crisis is one of the top problems our world is facing currently. To tackle this crisis,
-                    countries around the globe have been trying to lower their emission rates.</p>
-                <p>As a team, we are interested in using machine learning to help predict the future emissions from
-                    countries based on how they generate energy in the past years.</p>
-                <p>We want to discover whether or not the current efforts the countries put in are enough to meet their
-                    emission goal in 2030 based on the Paris 2015 Country Climate Pledges.</p>
-                <p>We are also interested in exploring countries’ yearly temperature change and to discover when the
-                    emission goals are and/or aren’t predicted to be met, what will be the prediction for our future
-                    temperature.</p>
+                <p class="tab">Project Scope:</p>
+                <p>As a team, we were curious to find out how the world and selective countries/regions are doing to meet their emission targets. We were also interested in visualizing the average temperature change by the world, and selective countries/regions.</p>
+                <p class="tab">Method:</p>
+                <p>We used bp's <a href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy/downloads.html/">https://www.bp.com/en/global/corporate/energy/</a> energy consumption data from 1965 to 2019 (most recent year available) in machine learning to predict the energy consumption in 2020, 2030, 2040 and 2050, and then used the predicted energy consumption values in machine learning to predict the future emission level.</p>
+                <ul>
+                    <li>For energy consumption, we looked at all energy, nonrenewable energy (and each specific energy type), and renewable energy consumption.</li>
+                    <li>We focus mainly on global trends and selective countries/regions that are big players in turn of energy consumption and emission.
+                    <ul style="padding-left:20px">
+                        <li>Global, China, US, EU, India</li>
+                    </ul>
+                    <li>We chose the year 2020, 2030, 2040, and 2050 for predictions, because…</li>
+                    <ul style="padding-left:20px">
+                        <li>2020 would give us insight on whether the predictions are logically reasonable</li>
+                        <li>2030 is the year that countries specified what their emission pledges are <a href="https://treaties.un.org/Pages/ViewDetails.aspx?src=IND&mtdsg_no=XXVII-7-d&chapter=27&clang=_en">https://treaties.un.org/</a></li>
+                        <li>2040 would show us the progress before getting to 2050</li>
+                        <li>2050 is the year that most countries would have emission level close to 0</li>
+                    </ul>
+                  </ul>
+
+                <p>We used NASA's <a href="https://climate.nasa.gov/vital-signs/global-temperature/">https://climate.nasa.gov/vital-signs/global-temperature/</a> global temperature annual average anomaly data from 1965 to 2020 (most recent year available) in machine learning to predict the average temperature change in 2030, 2040 and 2050. We visualized kaggle (https://www.kaggle.com/sevgisarac/temperature-change) annual average temperature change by countries in 2019.</p>
                 <!-- <div class="col-lg-6 col-md-6 col-sm-6">
                             <h5 class="title">Add info here</h5>
                         </div> -->
             </div>
             <div class="col-lg-6 col-md-3 col-sm-12">
-                <p>Climate crisis is one of the top problems our world is facing currently. To tackle this crisis,
-                    countries around the globe have been trying to lower their emission rates.</p>
-                <p>As a team, we are interested in using machine learning to help predict the future emissions from
-                    countries based on how they generate energy in the past years.</p>
-                <p>We want to discover whether or not the current efforts the countries put in are enough to meet their
-                    emission goal in 2030 based on the Paris 2015 Country Climate Pledges.</p>
-                <p>We are also interested in exploring countries’ yearly temperature change and to discover when the
-                    emission goals are and/or aren’t predicted to be met, what will be the prediction for our future
-                    temperature.</p>
+                <p class="tab">Background:</p>
+                <p>With COVID vaccination in progress, societies are slowly reopening to a new kind of normality. It is also time for the world to refocus on climate change, one of the most urgent problems that we are facing on Earth!</p>
+                <p>Climate crisis has been getting worse as time goes by. Around the world in recent years, we have been experiencing increasing number of natural disasters at uncommon intensities that were highly destructive to our societies; such as the wildfires in California, US, hurricanes in Atlantic basin, US and South America, bushfires in Australia, sandstorms in Beijing, China, and the list goes on.</p>
+                <p>Carbon dioxide emitted as a byproduct from energy consumption is the principal contributor to global warming, and countries around the world have come together at the Paris Agreement in 2015 to tackle this global issue.</p>
 
                 <img src="../static/images/wildfire_img.jpg" class="img-fluid">
             </div>
