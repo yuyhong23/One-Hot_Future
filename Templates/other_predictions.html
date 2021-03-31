@@ -14,8 +14,9 @@
     <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> -->
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #121212;">
         <img src="/Static/images/final_logo_80w.png" class="logo">
-        <a href="index.html" class="navbar-brand">One-Hot Future</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <a href="/" class="navbar-brand">One-Hot Future</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,15 +35,16 @@
                         Predictions
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="other_predictions.html">Emissions Predictions</a>
-                        <a class="dropdown-item" href="temperatures.html">Temperature Predictions</a>
+                        <a class="dropdown-item" href="/other_predictions">Emissions Predictions</a>
+                        <a class="dropdown-item" href="/temperatures">Temperature Predictions</a>
+                        <a class="dropdown-item" href="/kmeans">Clustering</a>
                     </div>
                 <!-- <li class="nav-item active">
-                    <a href="other_predictions.html" class="nav-link">Emissions Predictions</a>
+                    <a href="other_predictions.html" class="nav-link"> Emissions Predictions</a>
                 <li class="nav-item active">
                     <a href="other_predictions.html" class="nav-link"> Temperature Predictions</a> -->
                 <li class="nav-item">
-                    <a href="the_team.html" class="nav-link">Meet the Team</a>
+                    <a href="/kmeans" class="nav-link">Meet the Team</a>
                     <!-- <li class = "nav-item">
                             <a href ="data.html" class = "nav-link">Data</a>
                         </li>  -->
@@ -53,7 +55,7 @@
 
     <!-- this needs to be named container for bootstrap to know what to do -->
     <!-- add rows and columns. You can add as many rows as you need -->
-    <h2 style="text-align: center;" class="title">Temperature Predictions</h2>
+    <h2 style="text-align: center;" class="title">Emissions Predictions</h2>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
@@ -88,19 +90,18 @@
                     var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
                     vizElement.parentNode.insertBefore(scriptElement, vizElement);
                 </script>
-                <!-- Yuying's storyboard -->
-                <!-- <div class='tableauPlaceholder' id='viz1617077237437' style='position: relative'><noscript><a href='#'><img
-                                alt='Selective Region Energy Consumption and Emission '
-                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;selective_location_energy_emission&#47;SelectiveRegionEnergyConsumptionandEmission&#47;1_rss.png'
+                <div class='tableauPlaceholder' id='viz1617128644184' style='position: relative'><noscript><a href='#'><img
+                                alt='Selective Region Two Main Energy Types '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;selective_region_two_main_energy&#47;SelectiveRegionTwoMainEnergyTypes&#47;1_rss.png'
                                 style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
                         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                         <param name='embed_code_version' value='3' />
                         <param name='site_root' value='' />
-                        <param name='name' value='selective_location_energy_emission&#47;SelectiveRegionEnergyConsumptionandEmission' />
+                        <param name='name' value='selective_region_two_main_energy&#47;SelectiveRegionTwoMainEnergyTypes' />
                         <param name='tabs' value='no' />
                         <param name='toolbar' value='yes' />
                         <param name='static_image'
-                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;selective_location_energy_emission&#47;SelectiveRegionEnergyConsumptionandEmission&#47;1.png' />
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;selective_region_two_main_energy&#47;SelectiveRegionTwoMainEnergyTypes&#47;1.png' />
                         <param name='animate_transition' value='yes' />
                         <param name='display_static_image' value='yes' />
                         <param name='display_spinner' value='yes' />
@@ -110,45 +111,44 @@
                         <param name='filter' value='publish=yes' />
                     </object></div>
                 <script
-                    type='text/javascript'>
-                    var divElement = document.getElementById('viz1617077237437'); 
+                    type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1617128644184'); 
                     var vizElement = divElement.getElementsByTagName('object')[0]; 
-                    vizElement.style.width = '1016px'; vizElement.style.height = '991px'; 
-                    var scriptElement = document.createElement('script'); 
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+                    if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } 
+                    else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } 
+                    else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } 
+                    var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
                     vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                </script> -->
-                <!-- Yuying graph with energy types and CO2 emissions -->
-                <!-- <div class='tableauPlaceholder' id='viz1616989117177' style='position: relative'><noscript><a href='#'><img
-                                alt='Energy Types CO2Emissions &amp; Temperature Change '
-                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16168783032690&#47;EnergyTypesCO2EmissionsTemperatureChange&#47;1_rss.png'
+                </script>
+                <div class='tableauPlaceholder' id='viz1617130679923' style='position: relative'><noscript><a href='#'><img
+                                alt='Countries Emission Map '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7F&#47;7FTHM3G8S&#47;1_rss.png'
                                 style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
                         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                         <param name='embed_code_version' value='3' />
-                        <param name='site_root' value='' />
-                        <param name='name' value='Book1_16168783032690&#47;EnergyTypesCO2EmissionsTemperatureChange' />
-                        <param name='tabs' value='no' />
+                        <param name='path' value='shared&#47;7FTHM3G8S' />
                         <param name='toolbar' value='yes' />
                         <param name='static_image'
-                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16168783032690&#47;EnergyTypesCO2EmissionsTemperatureChange&#47;1.png' />
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7F&#47;7FTHM3G8S&#47;1.png' />
                         <param name='animate_transition' value='yes' />
                         <param name='display_static_image' value='yes' />
                         <param name='display_spinner' value='yes' />
                         <param name='display_overlay' value='yes' />
                         <param name='display_count' value='yes' />
                         <param name='language' value='en' />
-                    </object>
-                </div>
-                <script type='text/javascript'>
-                    var divElement = document.getElementById('viz1616989117177');
-                    var vizElement = divElement.getElementsByTagName('object')[0];
-                    if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; }
-                    else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; }
-                    else { vizElement.style.width = '100%'; vizElement.style.height = '827px'; } var scriptElement = document.createElement('script');
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        <param name='filter' value='publish=yes' />
+                    </object></div>
+                <script
+                    type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1617130679923'); 
+                    var vizElement = divElement.getElementsByTagName('object')[0]; 
+                    if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; 
+                    vizElement.style.height = '827px'; } 
+                    else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; 
+                    vizElement.style.height = '827px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } 
+                    var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
                     vizElement.parentNode.insertBefore(scriptElement, vizElement);
                 </script>
-                <div class="2030Pred" id="scatter"></div> -->
                 <!-- Yuying graph for energy consumption and emission -->
                 <!-- <div class='tableauPlaceholder' id='viz1617076451093' style='position: relative'><noscript><a href='#'><img
                                 alt='Selective Region Energy Consumption &amp; Emission '
@@ -181,40 +181,6 @@
                     vizElement.parentNode.insertBefore(scriptElement, vizElement);
                 </script>
             </div> -->
-                <!-- Tara's chart -->
-        <!-- <div class="row">
-            <div class='tableauPlaceholder' id='viz1617076346887' style='position: relative'><noscript><a
-                        href='#'><img alt='Selective Region Energy Consumption &amp; Emission '
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;selective_location_energy_emission&#47;SelectiveRegionEnergyConsumptionEmission&#47;1_rss.png'
-                            style='border: none' /></a></noscript><object class='tableauViz'  
-                    style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='embed_code_version' value='3' />
-                    <param name='site_root' value='' />
-                    <param name='name'
-                        value='selective_location_energy_emission&#47;SelectiveRegionEnergyConsumptionEmission' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image'
-                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;selective_location_energy_emission&#47;SelectiveRegionEnergyConsumptionEmission&#47;1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en' />
-                </object></div>               
-            <script type='text/javascript'>
-                var divElement = document.getElementById('viz1617076346887');
-                var vizElement = divElement.getElementsByTagName('object')[0];
-                if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; }
-                else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; }
-                else { vizElement.style.width = '100%'; vizElement.style.height = '977px'; }
-                var scriptElement = document.createElement('script');
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);
-            </script>
-        </div> -->
     </div>
 
 
