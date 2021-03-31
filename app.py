@@ -54,9 +54,5 @@ def the_team():
 
 #     return jsonify((results).to_dict("record"))
 
-<<<<<<< HEAD
-
-=======
->>>>>>> d37140a65fd291a814b4579319648c141fe3a52a
 if __name__ == '__main__':
     app.run(debug=True)
