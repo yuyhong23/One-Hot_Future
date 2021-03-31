@@ -21,7 +21,6 @@ app = Flask(__name__)
 
 # Flask Routes
 
-
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -55,10 +54,6 @@ def the_team():
 #         'SELECT * FROM energy_breakdown_emissions', connection)
 
 #     return jsonify((results).to_dict("record"))
-
-
-
-
 
 
 if __name__ == '__main__':
