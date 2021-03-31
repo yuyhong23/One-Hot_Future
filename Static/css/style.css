@@ -31,11 +31,14 @@ the color of the text in the navbar brand */
 }
 
 /* Format drought image */
-.img-fluid{
-    height: 300px;
-    width: 500px;
+.img-fluid {
+    height: 500px;
+    width: 300px;
     margin-bottom: 0px;
     margin-top: 0px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     vertical-align:text-top;
     margin-right: 10px;
     float: right;
@@ -93,7 +96,6 @@ h2{
     position: relative;
     margin-top: 30px; 
     margin-bottom: 30px; 
-    padding: 10px 20px 50px; 
     color:black;
 }
 
@@ -102,15 +104,25 @@ h2{
     font-size: 20px;
 }
 
-.tableauPlaceholder{
+/* .tableauPlaceholder{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+} */
+.tableauPlaceholder{
+    float: right;
 }
 
+p {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
-
+p1 {
+    font-size: 20px;
+}
 
 /*  ---------------------------------------------------------------------------------------------------------- */
 
