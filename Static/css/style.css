@@ -127,12 +127,17 @@ p1 {
 .tab {
     margin-left: 10px;
     font-size: 24px;
+    font-weight: bold;
 }
 
 li {
     font-size: 20px
 }
 
+.title {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 /*  ---------------------------------------------------------------------------------------------------------- */
 
 /* MEDIA CHANGES */
