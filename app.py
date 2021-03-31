@@ -1,14 +1,13 @@
-import numpy as np
-import pandas as pd
-import json
-import datetime
-# from ps_wd import pswd
+# import numpy as np
+# import pandas as pd
+# import json
+# import datetime
+# # from ps_wd import pswd
 
-import sqlalchemy
-from sqlalchemy import create_engine, func
+# import sqlalchemy
+# from sqlalchemy import create_engine, func
 
-from flask import Flask, jsonify
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 
 # pswd = 'postgres'
 
@@ -55,11 +54,6 @@ def the_team():
 #         'SELECT * FROM energy_breakdown_emissions', connection)
 
 #     return jsonify((results).to_dict("record"))
-
-
-
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)
