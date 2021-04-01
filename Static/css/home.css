@@ -17,7 +17,7 @@ html, body {
 
 a {
     text-decoration: none;
-    color:rgb(196, 46, 0);
+    color:rgb(13, 0, 196);
     font-weight: 500;
 }
 a:hover {
@@ -40,7 +40,7 @@ ul {
 .navbar-brand {
     font-family: 'Playfair Display';
     font-size: 2.4rem;
-    color:rgb(196, 46, 0);
+    color:rgb(13, 0, 196);
 }
 .navbar-toggler {
     background: black;
@@ -115,7 +115,7 @@ ul {
     margin-top: 275px;
     margin-bottom: 0px;
     margin-left: 20px;
-    color:rgb(196, 46, 0);
+    color:rgb(13, 0, 196);
 }
 .content p{
     margin-top: 100px;
