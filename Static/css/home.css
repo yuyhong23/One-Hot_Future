@@ -65,7 +65,7 @@ ul {
     margin-left: 10px;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     font-size: 1.4rem;
     position: relative;
 }
@@ -108,6 +108,7 @@ ul {
 .logo{
     width: 85px;
     cursor: pointer;
+    float: left;
 }
 .content h1{
     font-size: 80px;
