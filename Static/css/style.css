@@ -104,12 +104,12 @@ h2{
     font-size: 20px;
 }
 
-/* .tableauPlaceholder{
+.tableauPlaceholder{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-} */
+}
 .tableauPlaceholder{
     float: right;
 }
@@ -168,4 +168,6 @@ background-color: #0BADA6 !important;}} */
         width: 600px;
     }
 }
+
+
 
