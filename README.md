@@ -1,13 +1,17 @@
 # One-Hot Future
 
-![Project Logo](static/images/final_logo_250w.png)
+![Project Logo](Static/images/final_logo_250w.png)
 
 ## Data Analytics Team:
 
 *[Elizabeth Leshuk](https://github.com/eleshuk): logo, data cleaning, machine learning, HTML/CSS/js, presentation slide template
+
 *[Rob Orgain](https://github.com/roborgain1): HTML/CSS/js, analysis
+
 *[Tara Madhyasta](https://github.com/Polaris-pixel): data collection, machine learning, flask, tableau
+
 *[Yuying Hong](https://github.com/yuyhong23): project organization, data collection, data cleaning, machine learning, tableau, Heroku
+
 *Everyone: project idea, presentation slides, support/debug
 
 ## Background:
