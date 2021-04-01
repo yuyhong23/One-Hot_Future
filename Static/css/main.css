@@ -1,4 +1,4 @@
-/* Rob NavBar */
+/* NavBar */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap');
@@ -65,7 +65,7 @@ ul {
     margin-left: 10px;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 2rem 2.4rem;
+    padding: 2rem 2rem;
     font-size: 1.4rem;
     position: relative;
 }
@@ -82,3 +82,55 @@ ul {
     width: 85px;
     cursor: pointer;
 }
+
+
+body {
+    background-color: rgb(214, 232, 236);
+    margin-top: 100px;
+  }
+
+/* Background Tab */
+p {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.tab {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+li {
+    font-size: 20px
+}
+
+.title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.img-fluid {
+    height: 530px;
+    width: 800px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: circle;
+  }
+
+h2{
+    font-size: 40px;
+}
+
+/* The Team */
+h5 {
+    margin-top: 10px;
+}
+  
