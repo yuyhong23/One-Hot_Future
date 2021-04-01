@@ -65,14 +65,14 @@ ul {
     margin-left: 10px;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 2rem 2rem;
+    padding: 0rem 2rem;
     font-size: 1.4rem;
     position: relative;
 }
 .navbar-expand-lg .navbar-nav .nav-link:hover {
     border-top: 4px solid #ffffff;
 }
-.navbar-expand-lg .navbar-nav .nav-link.active {
+.navbar-expand-lg .navbar-nav .nav-link:active {
     border-top: 4px solid #e74c3c;
     color: #f3f3f3;
 }
@@ -81,6 +81,7 @@ ul {
 .logo{
     width: 85px;
     cursor: pointer;
+    float: left;
 }
 
 
@@ -89,7 +90,7 @@ body {
     margin-top: 100px;
   }
 
-/* Background Tab */
+/* Background Page */
 p {
     font-size: 20px;
     margin-right: 10px;
@@ -113,8 +114,8 @@ li {
 }
 
 .img-fluid {
-    height: 530px;
-    width: 800px;
+    height: 520px;
+    width: 900px;
     margin-top: 7px;
     margin-bottom: 10px;
     margin-left: 10px;
@@ -134,3 +135,11 @@ h5 {
     margin-top: 10px;
 }
   
+
+/* Predictions Page */
+.tableauPlaceholder{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
