@@ -1,0 +1,84 @@
+/* Rob NavBar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+
+html, body {
+    font-family: 'Poppins';
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(196, 46, 0);
+    font-weight: 500;
+}
+a:hover {
+    color: white;
+}
+ul {
+    list-style-type: none;
+}
+.navbar {
+    background: black;
+    padding: 1rem 4rem;
+    height: 2rem;
+    min-height: 10vh;
+}
+.navbar .navbar-brand a {
+    padding: 2rem 0;
+    display: block;
+    text-decoration: none;
+}
+.navbar-brand {
+    font-family: 'Playfair Display';
+    font-size: 2.4rem;
+    color:rgb(196, 46, 0);
+}
+.navbar-toggler {
+    background: black;
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+.navbar-toggler span {
+    display: block;
+    width: 24px;
+    height: 5px;
+    border: 3px;
+    background: white;
+}
+.navbar-toggler span + span {
+    margin-top: 4px;
+    width: 18px;
+    margin-left: 4px;
+}
+.navbar-toggler span + span + span {
+    width: 10px;
+    margin-left: 10px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 2rem 2.4rem;
+    font-size: 1.4rem;
+    position: relative;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    border-top: 4px solid #ffffff;
+}
+.navbar-expand-lg .navbar-nav .nav-link.active {
+    border-top: 4px solid #e74c3c;
+    color: #f3f3f3;
+}
+
+
+.logo{
+    width: 85px;
+    cursor: pointer;
+}
