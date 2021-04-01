@@ -1,6 +1,6 @@
 # One-Hot Future
 
-![Project Logo](Static/images/final_logo_250w.png)
+![Project Logo](Static/images/updated_logo.png)
 
 https://one-hot-future-2021.herokuapp.com/
 
