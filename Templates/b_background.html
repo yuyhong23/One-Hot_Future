@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>One-Hot Future</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../Static/css/main.css">
+</head>
+
+
+
+<body>
+    <!-- NavBar -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg header-nav fixed-top">
+          <img src="../static/images/updated_logo.png" class="logo">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../Templates/a_home.html">One-Hot Future</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../Templates/a_home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Templates/b_background.html">Background</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Predictions
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../Templates/c_emissions.html">Emissions Predictions</a></li>
+                      <li><a class="dropdown-item" href="../Templates/d_temperatures.html">Temperature Predictions</a></li>
+                      <li><a class="dropdown-item" href="../Templates/e_clustering.html">Clustering</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link", target="_blank", href="https://github.com/yuyhong23/One-Hot_Future">GitHub</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Templates/f_aboutus.html">The Team</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <h2 style="text-align: center;" class="title">Background</h2>
+            <br>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="../static/images/drought-climate-change.jpg" class="img-fluid">
+                <p class="tab">Method:</p>
+                <p>We used <a target="_blank", href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy/downloads.html/">bp's</a> energy consumption data from 1965 to 2019 (most recent year available) in machine learning to predict the energy consumption in 2020, 2030, 2040 and 2050, and then used the predicted energy consumption values in machine learning to predict the future emission level.</p>
+                <ul>
+                    <li>For energy consumption, we looked at all energy, nonrenewable energy (and each specific energy type), and renewable energy consumption.</li>
+                    <li>We focus mainly on global trends and selective regions that are big players in turn of energy consumption and emission.
+                    <ul style="padding-left:20px">
+                        <li>Global, China, US, EU, India</li>
+                    </ul>
+                    <li>We chose the year 2020, 2030, 2040, and 2050 for predictions, because…</li>
+                    <ul style="padding-left:20px">
+                        <li>2020 would give us insight on whether the predictions are logically reasonable</li>
+                        <li>2030 is the year that countries specified what their emission pledges are at <a target="_blank", href="https://treaties.un.org/Pages/ViewDetails.aspx?src=IND&mtdsg_no=XXVII-7-d&chapter=27&clang=_en">treaties.un.org</a></li>
+                        <li>2040 would show us the progress before getting to 2050</li>
+                        <li>2050 is the year that most countries would have emission level close to 0</li>
+                    </ul>
+                  </ul>
+
+                <p>We used <a target="_blank", href="https://climate.nasa.gov/vital-signs/global-temperature/">NASA's</a> global temperature annual average anomaly data from 1965 to 2020 (most recent year available) in machine learning to predict the average temperature change in 2030, 2040 and 2050. We visualized <a target="_blank", href="https://www.kaggle.com/sevgisarac/temperature-change">kaggle's</a> annual average temperature change by countries in 2019.</p>
+                <img src="../static/images/background_img3.jpg" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-3 col-sm-12">
+                <p>With COVID vaccination in progress, societies are slowly reopening to a new kind of normality. It is also time for the world to refocus on climate change, one of the most urgent problems that we are facing on Earth!</p>
+                <p>Climate crisis has been getting worse as time goes by. Around the world in recent years, we have been experiencing increasing number of natural disasters at uncommon intensities that were highly destructive to our societies; such as the wildfires in California, US, hurricanes in Atlantic basin, US and South America, bushfires in Australia, sandstorms in Beijing, China, and the list goes on.</p>
+                <p>Carbon dioxide emitted as a byproduct from energy consumption is the principal contributor to global warming, and countries around the world have come together at the Paris Agreement in 2015 to tackle this global issue.</p>
+                <p class="tab">Project Scope:</p>
+                <p>As a team, we were curious to find out how the world and selective regions are doing to meet their emission targets. We were also interested in visualizing the average temperature change by the world, and selective countries/regions.</p>
+                <img src="../static/images/wildfire_img.jpg" class="img-fluid">
+                <p class="tab">Conclusion:</p>
+                <p>Based on the predictions we made through machine learning, in order to meet the global emission goal, drastic measures are needed right now for CO2 emission to drop to the planned level by 2030.</p>
+                <p>Overall, most regions would need to work harder to achieve their emission pledges by 2030. </p>
+                <p>Even though our predictions show some disappointing trends regarding nonrenewable energy consumption and emission, we need to point out that the exponential trends shown in the renewable energy consumption are some good news!</p>
+                <p>In fact, our predictions for the nonrenewable energy consumption and emission did not factor in how the rise in renewable energy would lower the nonrenewable energy consumption and emission. Our predictions were solely based on the past data, which is likely to change drastically as countries around the world start to shift to renewable energy in recent years.</p>
+                <p>Based on the predictions we made through machine learning, the world’s temperature change would rise to slightly below 1.5 celsius by 2050, which would meet the Paris Agreement goal, despite the fact that the temperature would continue to rise. </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- config file -->
+    <script type="text/javascript" src="../static/js/js.js"></script>
+    <!-- Bootstrap 5 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="js/bootstrap/bootstrap-dropdown.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown()
+        });
+    </script>
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="../static/js/js.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+
+</body>
+</html>
