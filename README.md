@@ -4,6 +4,8 @@
 
 https://one-hot-future-2021.herokuapp.com/
 
+[Presentation Slides](https://docs.google.com/presentation/d/1QRUPwZ48Yx9f9POyFoYEypm0VHGm-jsNK4KMjPsEnD4/edit?usp=sharing)
+
 ## Data Analytics Team:
 
 *[Elizabeth Leshuk](https://github.com/eleshuk): logo, data cleaning, machine learning, HTML/CSS/js, presentation slide template
