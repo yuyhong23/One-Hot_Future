@@ -12,7 +12,7 @@ https://one-hot-future-2021.herokuapp.com/
 
 *[Rob Orgain](https://github.com/roborgain1): HTML/CSS/js, analysis
 
-*[Tara Madhyasta](https://github.com/Polaris-pixel): data collection, machine learning, flask, tableau
+*[Tara Madhyasta](https://github.com/Polaris-pixel): data collection, machine learning, tableau
 
 *[Yuying Hong](https://github.com/yuyhong23): project organization, data collection, data cleaning, machine learning, tableau, Heroku
 
