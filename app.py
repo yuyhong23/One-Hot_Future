@@ -24,22 +24,64 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route('/background')
+def b_background():
+    return render_template('b_background.html')
 
-@app.route('/other_predictions')
-def charts():
-    return render_template('other_predictions.html')
+@app.route('/emissions')
+def emissions():
+    return render_template('c_emissions.html')
 
 @app.route('/temperatures')
 def temperatures():
-    return render_template('temperatures.html')
+    return render_template('d_temperatures.html')
 
-@app.route('/kmeans')
-def kmeans():
-    return render_template('kmeans.html')
 
-@app.route('/the_team')
-def the_team():
-    return render_template('the_team.html')
+@app.route('/clustering')
+def clustering():
+    return render_template('e_clustering.html')
+
+@app.route('/aboutus')
+def aboutus():
+    return render_template('f_aboutus.html')
+# @app.route('/clustering')
+# def clustering():
+#     return render_template('e_clustering.html')
+
+# @app.route('/aboutus')
+# def aboutus():
+#     return render_template('f_aboutus.html')
+# @app.route('/kmeans')
+# def kmeans():
+#     return render_template('kmeans.html')
+
+# @app.route('/the_team')
+# def the_team():
+#     return render_template('the_team.html')
+
+# @app.route("/")
+# def home():
+#     return render_template("index.html")
+
+# @app.route("/background")
+# def background():
+#     return render_template("b_background.html")
+
+# @app.route('/emissions')
+# def emissions():
+#     return render_template('c_emissions.html')
+
+# @app.route('/temperatures')
+# def temperatures():
+#     return render_template('d_temperatures.html')
+
+# @app.route('/clustering')
+# def clustering():
+#     return render_template('e_clustering.html')
+
+# @app.route('/aboutus')
+# def aboutus():
+#     return render_template('f_aboutus.html')
 
 
 # @app.route("/data")
