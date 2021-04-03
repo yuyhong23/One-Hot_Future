@@ -113,7 +113,7 @@ p {
 .tab {
     margin-left: 10px;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 li {
@@ -123,13 +123,14 @@ li {
 .title {
     margin-top: 40px;
     margin-bottom: 40px;
+    font-weight: 550px;
 }
 
 .img-fluid {
     height: 520px;
     width: 900px;
     margin-top: 7px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     margin-left: 10px;
     margin-right: 10px;
 }
