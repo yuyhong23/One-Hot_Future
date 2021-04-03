@@ -16,7 +16,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg header-nav fixed-top">
           <img src="../static/images/updated_logo.png" class="logo">
-            <div class="container-fluid">
+            <div class="container-fluid" id="navbar-block">
               <a class="navbar-brand" href="../Templates/a_home.html">One-Hot Future</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
@@ -36,7 +36,7 @@
                       Predictions
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="../Templates/c_emissions.html">Emissions Predictions</a></li>
+                      <li><a class="dropdown-item" href="../Templates/c_emissions.html">Emission Predictions</a></li>
                       <li><a class="dropdown-item" href="../Templates/d_temperatures.html">Temperature Predictions</a></li>
                       <li><a class="dropdown-item" href="../Templates/e_clustering.html">Clustering</a></li>
                     </ul>
@@ -45,7 +45,7 @@
                     <a class="nav-link", target="_blank", href="https://github.com/yuyhong23/One-Hot_Future">GitHub</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../Templates/f_aboutus.html">The Team</a>
+                    <a class="nav-link" href="../Templates/f_aboutus.html">About Us</a>
                   </li>
                 </ul>
               </div>
@@ -60,7 +60,7 @@
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <img src="../static/images/drought-climate-change.jpg" class="img-fluid">
                 <p class="tab">Method:</p>
-                <p>We used <a target="_blank", href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy/downloads.html/">bp's</a> energy consumption data from 1965 to 2019 (most recent year available) in machine learning to predict the energy consumption in 2020, 2030, 2040 and 2050, and then used the predicted energy consumption values in machine learning to predict the future emission level.</p>
+                <p>We used <a target="_blank", href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy/downloads.html/" id="brurl">bp's</a> energy consumption data from 1965 to 2019 (most recent year available) in machine learning to predict the energy consumption in 2020, 2030, 2040 and 2050, and then used the predicted energy consumption values in machine learning to predict the future emission level.</p>
                 <ul>
                     <li>For energy consumption, we looked at all energy, nonrenewable energy (and each specific energy type), and renewable energy consumption.</li>
                     <li>We focus mainly on global trends and selective regions that are big players in turn of energy consumption and emission.
@@ -70,13 +70,13 @@
                     <li>We chose the year 2020, 2030, 2040, and 2050 for predictions, because…</li>
                     <ul style="padding-left:20px">
                         <li>2020 would give us insight on whether the predictions are logically reasonable</li>
-                        <li>2030 is the year that countries specified what their emission pledges are at <a target="_blank", href="https://treaties.un.org/Pages/ViewDetails.aspx?src=IND&mtdsg_no=XXVII-7-d&chapter=27&clang=_en">treaties.un.org</a></li>
+                        <li>2030 is the year that countries specified what their emission pledges are at <a target="_blank", href="https://treaties.un.org/Pages/ViewDetails.aspx?src=IND&mtdsg_no=XXVII-7-d&chapter=27&clang=_en" id="brurl">treaties.un.org</a></li>
                         <li>2040 would show us the progress before getting to 2050</li>
                         <li>2050 is the year that most countries would have emission level close to 0</li>
                     </ul>
                   </ul>
 
-                <p>We used <a target="_blank", href="https://climate.nasa.gov/vital-signs/global-temperature/">NASA's</a> global temperature annual average anomaly data from 1965 to 2020 (most recent year available) in machine learning to predict the average temperature change in 2030, 2040 and 2050. We visualized <a target="_blank", href="https://www.kaggle.com/sevgisarac/temperature-change">kaggle's</a> annual average temperature change by countries in 2019.</p>
+                <p>We used <a target="_blank", href="https://climate.nasa.gov/vital-signs/global-temperature/" id="brurl">NASA's</a> global temperature annual average anomaly data from 1965 to 2020 (most recent year available) in machine learning to predict the average temperature change in 2030, 2040 and 2050. We visualized <a target="_blank", href="https://www.kaggle.com/sevgisarac/temperature-change" id="brurl">kaggle's</a> annual average temperature change by countries in 2019.</p>
                 <img src="../static/images/background_img3.jpg" class="img-fluid">
             </div>
             <div class="col-lg-6 col-md-3 col-sm-12">
@@ -95,6 +95,7 @@
             </div>
         </div>
     </div>
+    
 
 
 
@@ -126,6 +127,6 @@
     <script type="text/javascript" src="../static/js/js.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
-
+    <footer> One-Hot Future &copy; 2021 </footer>
 </body>
 </html>
