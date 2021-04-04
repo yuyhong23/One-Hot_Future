@@ -12,7 +12,7 @@ https://one-hot-future-2021.herokuapp.com/
 
 *[Rob Orgain](https://github.com/roborgain1): HTML/CSS/js, analysis
 
-*[Tara Madhyasta](https://github.com/Polaris-pixel): data collection, machine learning, tableau
+*[Tara Madhyasta](https://github.com/Polaris-pixel): data collection, machine learning, tableau, analysis
 
 *[Yuying Hong](https://github.com/yuyhong23): project organization, data collection, data cleaning, machine learning, tableau, Heroku
 
@@ -22,7 +22,7 @@ https://one-hot-future-2021.herokuapp.com/
 
 With COVID vaccination in progress, societies are slowly reopening to a new kind of normality. It is also time for the world to refocus on climate change, one of the most urgent problems that we are facing on Earth!
 
-Climate crisis has been getting worse as time goes by. Around the world in recent years, we have been experiencing increasing number of natural disasters at uncommon intensities that were highly destructive to our societies; such as the wildfires in California, US, hurricanes in Atlantic basin, US and South America, bushfires in Australia, sandstorms in Beijing, China, and the list goes on.
+Climate crisis has been getting worse as time goes by. Around the world in recent years, we have been experiencing increasing numbers of natural disasters at uncommon intensities that were highly destructive to our societies; such as the wildfires in California, US, hurricanes in Atlantic basin, US and South America, bushfires in Australia, sandstorms in Beijing, China, and the list goes on.
 
 Carbon dioxide emitted as a byproduct from energy consumption is the principal contributor to global warming, and countries around the world have come together at the Paris Agreement in 2015 to tackle this global issue.
 
@@ -59,19 +59,31 @@ energy consumption data from 1965 to 2019 (most recent year available) in machin
         - 2040 would show us the progress before getting to 2050
         - 2050 is the year that most countries would have emission level close to 0
 
-We used [NASA](https://climate.nasa.gov/vital-signs/global-temperature/)’s global temperature annual average anomaly data from 1965 to 2020 (most recent year available) in machine learning to predict the average temperature change in 2030, 2040 and 2050. We visualized [kaggle](https://www.kaggle.com/sevgisarac/temperature-change) annual average temperature change by countries in 2019.
+We used [NASA](https://climate.nasa.gov/vital-signs/global-temperature/)’s global temperature annual average anomaly data from 1965 to 2020 (most recent year available) in machine learning to predict the average temperature change in 2030, 2040 and 2050. We visualized [kaggle](https://www.kaggle.com/sevgisarac/temperature-change) (also from NASA) annual average temperature change by countries in 2019.
 
 ## Analysis:
 
-#### Energy Types Consumption:
+#### Selective Region Energy Emission Benchmarks Visualizations
+
+The most resource dependent countries and regions including China, US, Europe, and India as well as the rest of the world have ambitious energy emission benchmarks planning for zero emissions by 2030.
+
+#### Selective Region Renewable and Nonrenewable Energy Consumption Visualizations
+
+If trends, beginning in 1965 until our latest year of data collection in 2019, continue, we predict that global non-renewable energy consumption will increase by 50% of todays values with China's predicted consumption to double. All countries, however, are expected to exponentially increase their renewable energy consumption in the next 50 years.
+
+#### Countries CO2 Emission from Energy Consumption Visualizations
 
 In 2019, the top five non-renewable resources harnessed for energy from highest to lowest consumption include oil (194 exajoules), coal (158 exajoules), gas (142 exajoules), hydroelectric (38 exajoules), and nuclear (25 exajoules) energy, with renewable consumption (21 exajoules) being lower than any individual aforementioned resource the same year. Using machine learning to predict the consumption for each resource with data from 1965 to 2019 shows that energy consumption in 2050 will increase slightly in all non-renewable resources, but will increase exponentially in renewable resources at 296 exajoules, which is 14 times higher than in 2019. Renewable resource consumption is projected to be the leading resource consumed among all non-renewable and renewable resources at 28% of the total, with oil being the second highest consumed consisting of 24% of the total by 2050.
 
-#### CO2 Emissions & Avg Temp Change:
+#### Energy Types Consumption Visualizations
+
+In 2019, the top five non-renewable resources harnessed for energy from highest to lowest consumption include oil (194 exajoules), coal (158 exajoules), gas (142 exajoules), hydroelectric (38 exajoules), and nuclear (25 exajoules) energy, with renewable consumption (21 exajoules) being lower than any individual aforementioned resource the same year. Using machine learning to predict the consumption for each resource with data from 1965 to 2019 shows that energy consumption in 2050 will increase slightly in all non-renewable resources, but will increase exponentially in renewable resources at 296 exajoules, which is 14 times higher than in 2019. Renewable resource consumption is projected to be the leading resource consumed among all non-renewable and renewable resources at 28% of the total, with oil being the second highest consumed consisting of 24% of the total by 2050.
+
+#### CO2 Emissions & Avg Temp Change Visualizations
 
 CO2 emissions are projected to increase steadily with 34,000 million tonnes produced in 2019 and 45,600 million tonnes expected in 2050. From 1965 to 2019, the global average temperature has increased by around 1 degrees Celsius and is projected to increase by another .5 degrees Celsius by 2050 giving a total increase from 1965 to 2050 at 1.5 degrees Celsius.
 
-#### Extra Notes:
+#### Extra Notes
 
 - Official emission pledges are made for 2030 for the Paris Agreement
 - US’s emission goal is by 2025, but for our project’s purpose, we used that emission goal as the 2030’s emission goal
@@ -79,6 +91,14 @@ CO2 emissions are projected to increase steadily with 34,000 million tonnes prod
 - 2040 emission goals are half of the emission pledges for 2030, we did that to see the progress trend better
 - 2050 emission goals are set to zero for all for this project’s purpose
 - China plans to peak its emission before 2030, so the emission trend predicted is likely to be inaccurate
+
+#### KMeans Clustering of Countries Visualizations
+
+A clear pattern can be seen in clusters where two groups of countries have remained in the same two clusters since the year 2000
+
+Upon further analysis these countries belong to two groups: one with high coal consumption and another with high gas consumption throughout the past two decades
+
+These two clusters are also the highest contributor of CO2 emissions since past two decades
 
 ## Conclusion:
 
