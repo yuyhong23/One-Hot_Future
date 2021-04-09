@@ -61,6 +61,20 @@ energy consumption data from 1965 to 2019 (most recent year available) in machin
 
 We used [NASA](https://climate.nasa.gov/vital-signs/global-temperature/)’s global temperature annual average anomaly data from 1965 to 2020 (most recent year available) in machine learning to predict the average temperature change in 2030, 2040 and 2050. We visualized [kaggle](https://www.kaggle.com/sevgisarac/temperature-change) (also from NASA) annual average temperature change by countries in 2019.
 
+#### Code Snippets for Cleaning
+
+Before Cleaning
+![preclean](slide_imgs/prior_cleaning.png)
+
+After Cleaning
+![afterclean](slide_imgs/after_cleaning.png)
+
+Cleaning Again for Machine Learning
+![clean_ml](slide_imgs/clean_beforeML.png)
+
+Cleaning Again 2 Machine Learning
+![clean2_ml](slide_imgs/clean2_beforeML.png)
+
 ## Analysis:
 
 #### Selective Region Energy Emission Benchmarks Visualizations
